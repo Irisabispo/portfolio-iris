@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="6" fill="#0d0d0d"/>
+  <text x="16" y="18" font-size="13" text-anchor="middle" font-family="Georgia, serif" font-weight="700" fill="#f472b6">IB</text>
+  <text x="16" y="27" font-size="7" text-anchor="middle" font-family="monospace" font-weight="700" fill="#fbcfe8">&lt;/&gt;</text>
+</svg>
