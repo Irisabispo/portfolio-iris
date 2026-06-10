@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+body {
+    background: $cor-principal;
+    font-family: $fonte-texto;
+    color: $cor-texto;
+
+}

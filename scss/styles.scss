@@ -1,15 +1,4 @@
-@use 'variables';
+@use 'variables' as *;
 @use 'reset';
 @use 'header';
-
-//estilos globais
-body {
-    background-color: variables.$cor-principal;
-    font-family: Arial, sans-serif;
-}
-
-
-
-h1, h2 {
-    color: rgb(228, 65, 141);
-}
+@use 'base';
