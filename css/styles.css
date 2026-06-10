@@ -26,9 +26,41 @@ ul {
 }
 
 body {
-  background: #090909;
+  background: #0e0e0e;
   font-family: "DM Sans", sans-serif;
   color: #d4b8a0;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(90deg, #f472b6, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+}
+.hero .hero-buttons {
+  display: flex;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.hero .hero-buttons a {
+  border-radius: 999px;
+  background-color: #f472b6;
+  padding: 2em;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

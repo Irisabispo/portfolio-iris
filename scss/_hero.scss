@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+        background-image: linear-gradient(90deg, $cor-destaque, white );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 600px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        margin-top: 4rem;
+        gap: 2rem;
+
+        a {
+            border-radius: 999px;
+            background-color: $cor-destaque;
+            padding: 2em;
+            color: white;
+            
+        }
+
+    }
+}
+
