@@ -83,4 +83,26 @@ body {
   background-color: rgb(165, 37, 116);
 }
 
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ef84ab;
+  padding: 5rem;
+  overflow: hidden;
+  color: #2d1b25;
+  gap: 8rem;
+  font-family: "DM Sans", sans-serif;
+}
+.sobre h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.sobre p {
+  line-height: 1.8;
+}
+.sobre aside {
+  font-size: 1.1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

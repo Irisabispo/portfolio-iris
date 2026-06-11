@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $fundo-sobre;
+    padding: 5rem;
+    overflow: hidden;
+    color: $cor-texto-escuro;
+    gap: 8rem;
+    font-family: $fonte-texto;
+    
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    aside {
+        font-size: 1.1rem;
+    }
+}
