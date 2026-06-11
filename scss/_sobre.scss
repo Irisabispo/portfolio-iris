@@ -2,14 +2,34 @@
 
 .sobre {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: $fundo-sobre;
     padding: 5rem;
     overflow: hidden;
     color: $cor-texto-escuro;
-    gap: 8rem;
+    gap: 3rem;
     font-family: $fonte-texto;
     
+    article,
+    aside {
+        background: white;
+        padding: 2rem;
+        border-radius: 24px;
+        border: 1px, solid rgba(0, 0, 0, 0.05);
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+            transition: all .3s ease;
+    }
+
+    article:hover,
+    aside:hover {
+        transform: translateY(-5px);
+
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+    }
+
     h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
@@ -20,7 +40,30 @@
         line-height: 1.8;
     }
 
+    article {
+        border-top: 4px solid #b08aa0;
+    }
     aside {
         font-size: 1.1rem;
+        border-top: 4px solid #e3c4d4;
+    }
+
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside li {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    aside img {
+        width: 22px;
+        height: 22px;
     }
 }

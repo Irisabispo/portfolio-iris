@@ -85,13 +85,27 @@ body {
 
 .sobre {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   background-color: #ef84ab;
   padding: 5rem;
   overflow: hidden;
   color: #2d1b25;
-  gap: 8rem;
+  gap: 3rem;
   font-family: "DM Sans", sans-serif;
+}
+.sobre article,
+.sobre aside {
+  background: white;
+  padding: 2rem;
+  border-radius: 24px;
+  border: 1px, solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.sobre article:hover,
+.sobre aside:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 .sobre h2 {
   font-size: 3rem;
@@ -101,8 +115,27 @@ body {
 .sobre p {
   line-height: 1.8;
 }
+.sobre article {
+  border-top: 4px solid #b08aa0;
+}
 .sobre aside {
   font-size: 1.1rem;
+  border-top: 4px solid #e3c4d4;
+}
+.sobre aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sobre aside li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.sobre aside img {
+  width: 22px;
+  height: 22px;
 }
 
 /*# sourceMappingURL=styles.css.map */
