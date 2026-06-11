@@ -29,10 +29,14 @@
         gap: 2rem;
 
         a {
-            border-radius: 999px;
+            border-radius: 50px;
             background-color: $cor-destaque;
-            padding: 2em;
+            padding: 1rem;
             color: white;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: rgb(165, 37, 116);
+            } 
             
         }
 
