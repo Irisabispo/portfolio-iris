@@ -13,30 +13,42 @@ ul {
   list-style: none;
 }
 
-.navbar {
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  padding: 40px 30px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 1rem 2rem;
-  background-color: rgb(11, 9, 11);
-  position: fixed;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid;
 }
-.navbar .logo {
+header .logo {
   color: rgb(222, 68, 184);
   font-size: 1.5rem;
   font-family: "Source Code Pro", monospace;
 }
-.navbar .logo-nome {
+header .logo-nome {
   color: rgb(249, 248, 248);
 }
-.navbar a {
+header a {
   color: #fbcfe8;
+  padding: 10px;
 }
-.navbar a:hover {
+header a:hover {
   background-color: rgb(211, 90, 157);
   border-radius: 55px;
 }
-.navbar ul {
+header .navbar {
+  display: flex;
+  width: auto;
+  padding: 1rem 2rem;
+  background-color: rgba(11, 9, 11, 0);
+  font-weight: bold;
+}
+header .navbar ul {
   display: flex;
   gap: 2rem;
 }
@@ -78,6 +90,7 @@ body {
   padding: 1rem;
   color: white;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 .hero .hero-buttons a:hover {
   background-color: rgb(165, 37, 116);
