@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +52,28 @@ header .navbar {
 header .navbar ul {
   display: flex;
   gap: 2rem;
+}
+
+.menu-hamburguer {
+  display: none; /*esconde o botão no pc*/
+  gap: 1rem;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-hamburguer .menu-hamburguer {
+  background: red !important;
+}
+.menu-hamburguer span {
+  width: 25px;
+  height: 3px;
+  background-color: #f472b6;
+  border-radius: 400px;
+}
+
+.menu-hamburguer.ativo ~ .navbar { /* o seletor  ~ funciona selecionando irmaos sem estar aninhado dentro de um bloco*/
+  display: flex;
 }
 
 body {
@@ -226,6 +249,23 @@ main {
   font-size: 0.9rem;
   font-weight: 600;
   color: #0e0e0e;
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .menu-hamburguer {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

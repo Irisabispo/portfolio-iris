@@ -21,7 +21,7 @@ header {
     .logo-nome {
         color: rgb(249, 248, 248);
     }
-    
+
     a {
         color: $cor-titulo;
         padding: 10px;
@@ -31,17 +31,42 @@ header {
         border-radius: 55px;
         }  
     }
+
     .navbar {
-    display: flex;
-    width: auto;
-    padding: 1rem 2rem;
-    background-color: rgba(11, 9, 11, 0);
-    font-weight: bold;
-    
-    
-    ul {
         display: flex;
-        gap: 2rem;
+        width: auto;
+        padding: 1rem 2rem;
+        background-color: rgba(11, 9, 11, 0);
+        font-weight: bold;
+        
+        
+        ul {
+            display: flex;
+            gap: 2rem;
         }
     }
+}
+
+
+.menu-hamburguer {
+    display: none; /*esconde o botão no pc*/
+    gap: 1rem;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    .menu-hamburguer {
+    background: red !important;
+}
+
+    span {
+        width: 25px;
+        height: 3px;
+        background-color: $cor-destaque;
+        border-radius: 400px;
+    }
+}    
+
+.menu-hamburguer.ativo ~ .navbar {   /* o seletor  ~ funciona selecionando irmaos sem estar aninhado dentro de um bloco*/
+    display: flex;
 }
