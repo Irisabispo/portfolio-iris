@@ -62,9 +62,6 @@ header .navbar ul {
   border: none;
   cursor: pointer;
 }
-.menu-hamburguer .menu-hamburguer {
-  background: red !important;
-}
 .menu-hamburguer span {
   width: 25px;
   height: 3px;
@@ -259,6 +256,7 @@ main {
     right: 0;
     width: 100%;
     flex-direction: column;
+    align-items: flex-end;
   }
   .navbar ul {
     flex-direction: column;
