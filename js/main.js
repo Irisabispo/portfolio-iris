@@ -6,5 +6,7 @@ btn.addEventListener("click", () => {
 })
 
 
+//ano dinâmico onde não preciso editar quando chegar outros anos
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
