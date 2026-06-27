@@ -81,18 +81,15 @@ body {
 
 .hero {
   min-height: 100vh;
-  padding-top: 300px;
   background-color: rgb(3, 3, 3);
-}
-.hero .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: 130px 4rem 2rem 4rem;
 }
 .hero h1 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
   background-image: linear-gradient(90deg, #f472b6, white);
   -webkit-background-clip: text;
@@ -101,7 +98,6 @@ body {
 }
 .hero p {
   font-size: 1.25rem;
-  max-width: 600px;
 }
 .hero .hero-buttons {
   display: flex;
@@ -120,17 +116,51 @@ body {
   background-color: rgb(165, 37, 116);
 }
 
+.hero-texto {
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
+}
+
+@keyframes cair {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cracha {
+  animation: cair 0.8s ease forwards;
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+.cracha img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f472b6;
+}
+
 .sobre {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
   background-color: #ef84ab;
   padding: 5rem;
   overflow: hidden;
   color: #2d1b25;
   font-family: "DM Sans", sans-serif;
-}
-.sobre .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
 }
 .sobre article,
 .sobre aside {
@@ -177,19 +207,10 @@ body {
   height: 22px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
 .habilidades {
   display: flex;
   flex-direction: column;
-}
-.habilidades .container {
-  width: 100%;
+  padding: 10rem;
 }
 .habilidades h2 {
   text-align: center;
@@ -296,12 +317,6 @@ footer .footer-direitos {
 footer .icons {
   display: flex;
   gap: 2rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
