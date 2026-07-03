@@ -47,7 +47,6 @@ header {
     }
 }
 
-
 .menu-hamburguer {
     display: none; /*esconde o botão no pc*/
     gap: 1rem;
@@ -64,7 +63,3 @@ header {
         border-radius: 400px;
     }
 }    
-
-.menu-hamburguer.ativo ~ .navbar {   /* o seletor  ~ funciona selecionando irmaos sem estar aninhado dentro de um bloco*/
-    display: flex;
-}

@@ -25,21 +25,22 @@
     }
 
     .navbar {
-        display: none;
+        display: none !important; /*esconde a navbar no celular*/
 
         position: absolute;
         top: 100%;
         left: 0;
 
         width: 100%;
-
         
-
         padding: 1.5rem;
-
+        
         box-sizing: border-box;
     }
 
+    .navbar.ativo {
+        display: flex !important; /*mostra a navbar quando o botão é clicado*/
+    }
     
     header .navbar ul {
         display: flex;
@@ -49,13 +50,10 @@
     }
     
 
-    .menu-hamburguer.ativo + .navbar {
-            display: flex;
-        }
-}
+    
 
 
-@media (max-width: 768px) {
+//SOBRE
     .hero {
         flex-direction: column;
         gap: 3rem;
@@ -99,9 +97,9 @@
     .cracha::after {
         display: none;
     }
-}
 
-@media (max-width: 768px) {
+
+//SOBRE
     .sobre {
         grid-template-columns: 1fr;
         padding: 2rem 1.5rem;
@@ -124,10 +122,8 @@
     .sobre aside {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 768px) {
-
+//HABILIDADES
     .habilidades {
         padding: 3rem 1.5rem;
     }
@@ -144,7 +140,8 @@
 
     .skill-card {
         width: 100%;
-        padding: 1.5rem;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .skill-icons {

@@ -69,10 +69,6 @@ header .navbar ul {
   border-radius: 400px;
 }
 
-.menu-hamburguer.ativo ~ .navbar { /* o seletor  ~ funciona selecionando irmaos sem estar aninhado dentro de um bloco*/
-  display: flex;
-}
-
 body {
   background: #0e0e0e;
   font-family: "DM Sans", sans-serif;
@@ -363,7 +359,7 @@ body {
     margin-left: auto;
   }
   .navbar {
-    display: none;
+    display: none !important; /*esconde a navbar no celular*/
     position: absolute;
     top: 100%;
     left: 0;
@@ -371,17 +367,15 @@ body {
     padding: 1.5rem;
     box-sizing: border-box;
   }
+  .navbar.ativo {
+    display: flex !important; /*mostra a navbar quando o botão é clicado*/
+  }
   header .navbar ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
   }
-  .menu-hamburguer.ativo + .navbar {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     gap: 3rem;
@@ -416,8 +410,6 @@ body {
   .cracha::after {
     display: none;
   }
-}
-@media (max-width: 768px) {
   .sobre {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
@@ -436,8 +428,6 @@ body {
   .sobre aside {
     font-size: 1rem;
   }
-}
-@media (max-width: 768px) {
   .habilidades {
     padding: 3rem 1.5rem;
   }
@@ -451,7 +441,8 @@ body {
   }
   .skill-card {
     width: 100%;
-    padding: 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .skill-icons {
     gap: 1rem;
