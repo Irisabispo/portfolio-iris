@@ -408,6 +408,26 @@ body {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+  .sobre h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sobre article,
+  .sobre aside {
+    padding: 1.5rem;
+  }
+  .sobre p {
+    font-size: 1rem;
+  }
+  .sobre aside {
+    font-size: 1rem;
+  }
+}
 .projetos {
   padding: 2rem;
 }
