@@ -372,6 +372,42 @@ body {
     display: flex;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 7rem 1.5rem 3rem;
+    text-align: center;
+  }
+  .hero-texto {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .cracha {
+    margin-top: 0;
+    padding: 1.5rem;
+  }
+  .cracha img {
+    width: 150px;
+    height: 150px;
+  }
+  .cracha::before,
+  .cracha::after {
+    display: none;
+  }
+}
 .projetos {
   padding: 2rem;
 }
