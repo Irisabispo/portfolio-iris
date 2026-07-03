@@ -3,6 +3,7 @@ const menu = document.querySelector(".navbar");
 
 btn.addEventListener("click", () => {
     btn.classList.toggle("ativo");
+    menu.classList.toggle("ativo");
 })
 
 
