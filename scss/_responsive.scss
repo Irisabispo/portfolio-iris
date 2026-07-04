@@ -158,7 +158,40 @@
     }
 
     .skill-icons span {
-        font-size: .8rem;
+        font-size: .7rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .projetos {
+        padding: 2rem 1rem;
+    }
+
+    .projetos h2 {
+        font-size: 2.2rem;
+        padding: 1rem 0;
+    }
+
+    .projetos-track {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .projeto-card {
+        flex: 0 0 90%;
+        max-width: 330px;
+        width: 100%;
+    }
+
+    .card-body {
+        padding: 1rem;
+        min-width: 180px;
+    }
+
+    .card-preview {
+        height: 160px;
     }
 
 }
