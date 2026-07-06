@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+// estilo base da placa de mensagens
+.board {
+    display: flex; // transforma a section em um flexbox
+    justify-content: center; //centraliza horizontalmente
+    padding: 5rem 1.5rem; // espaço acima e abaixo da section
+}
+
+.board-display {
+    width: min(800px, 100%); // funcao moderna do css, escolhe o menor valor entre 800px e 100% da largura da tela e nao estoura a tela
+    background: #111;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.board-display::before {
+    content: "● ● ●   terminal";
+    display: block;
+
+    padding: .9rem 1rem;
+
+    background: #222;
+
+    color: #888;
+
+    font-family: $fonte-codigo;
+
+    font-size: .85rem;
+}
+
+// animar o <p> quando o texto  mudar visualmente
+#board-text {
+    padding: 2rem;
+
+    color: #3cff73;
+
+    font-family: $fonte-codigo;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+    
+    white-space: pre-line; // mantem os espaços e quebras de linha do texto
+}
+
+#board-text::after {
+    content: "_"; // adiciona um cursor piscando no final do texto
+    color: #3cff73;
+    margin-left: 3px;
+    animation: piscar .8s infinite; // animação de piscar o cursor
+}
+
+@keyframes piscar {
+    0%, 
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}

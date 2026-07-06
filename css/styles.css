@@ -584,6 +584,54 @@ body {
   margin-bottom: 2rem;
 }
 
+.board {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+}
+
+.board-display {
+  width: min(800px, 100%);
+  background: #111;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.board-display::before {
+  content: "● ● ●   terminal";
+  display: block;
+  padding: 0.9rem 1rem;
+  background: #222;
+  color: #888;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.85rem;
+}
+
+#board-text {
+  padding: 2rem;
+  color: #3cff73;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+#board-text::after {
+  content: "_";
+  color: #3cff73;
+  margin-left: 3px;
+  animation: piscar 0.8s infinite;
+}
+
+@keyframes piscar {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
