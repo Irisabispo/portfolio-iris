@@ -1,3 +1,4 @@
+//menu mobile**
 const btn = document.querySelector(".menu-hamburguer");
 const menu = document.querySelector(".navbar");
 
@@ -6,29 +7,90 @@ btn.addEventListener("click", () => {
     menu.classList.toggle("ativo");
 });
 
-
-// array com as mensagens que serão exibidas na plaquinha
-// o js vai mostrar uma mensagem de cada vez
+//esse é o bloco do terminal**
 const mensagens = [
-    "Bem-vindo(a) ao meu portfólio!",
-    "Futura desenvolvedora front-end apaixonada por criar experiências digitais incríveis e criativas.",
-    "Muito curiosa e sempre em busca de aprender coisas novas.",
-    "git commit -m 'sempre buscando evoluir e melhorar minhas habilidades.'",
+    "$ cat notes.md",
+    "Nem toda ideia nasce pronta.",
+    "Algumas precisam de café.",
+    "Outras, de tereré.",
+    "",
+
+    "$ git log --oneline",
+    "feat: transformar ideias em código",
+    "fix: aprender com os próprios erros",
+    "refactor: melhorar um pouco todos os dias",
+    "",
+
+    "$ npm run portfolio",
+    "✔ carregando criatividade...",
+    "✔ carregando dedicação...",
+    "✔ carregando curiosidade...",
+    "",
+
+    "$ git push origin main",
+    "Obrigado por visitar meu portfólio.",
+    "$"
 ];
 
 const boardText = document.getElementById("board-text");
 
-let index = 0;
-// exibe a primeira mensagem 
-boardText.textContent = mensagens[index];
+let linhaAtual = 0; //digita a primeira linha
+let letraAtual = 0; //posição da letra na linha
 
-setInterval(() => {
-    index = (index + 1) % mensagens.length;
-    boardText.textContent = mensagens[index];
-}, 5000); // a cada 5 segundos, o js vai executar a função que está dentro do setInterval
+let textoCompleto = "";
+
+function digitar() {
+
+    const mensagem = mensagens[linhaAtual];
+
+    if (letraAtual < mensagem.length) {
+
+        textoCompleto += mensagem.charAt(letraAtual);
+
+        boardText.textContent = textoCompleto;
+
+        letraAtual++;
+
+        setTimeout(digitar, 40 + Math.random() * 60);
+
+    } else {
+
+        textoCompleto += "\n";
+
+        boardText.textContent = textoCompleto;
+
+        linhaAtual++;
+
+        letraAtual = 0;
+
+        if (linhaAtual < mensagens.length) {
+
+            setTimeout(digitar, 350);
+
+        } else {
+
+            setTimeout(reiniciarTerminal, 3000);   
+        }
+    } 
+}
+
+digitar();
+
+function reiniciarTerminal() {
+
+    textoCompleto = ""; //esvazia o terminal
+
+    linhaAtual = 0; //volta pra primeira linha
+
+    letraAtual = 0; //volta pra primeira letra da primeira linha
+
+    boardText.textContent = ""; //limpa o <p> na tela
+
+    digitar(); //começa tudo novamente
+}
 
 
-
+//efeito dos cards**
 // a luz quando o mouse passa nos cards de habilidades
 const cards = document.querySelectorAll(".skill-card");
 
@@ -52,7 +114,8 @@ cards.forEach((card) => {
 
 
 
-//ano dinâmico onde não preciso editar quando chegar outros anos
+//ano dinâmico do footer**
 document.getElementById("year").textContent = new Date().getFullYear();
 
 
+        

@@ -166,6 +166,7 @@
 @media (max-width: 768px) {
 
     .projetos {
+        grid-template-columns: 1fr;
         padding: 2rem 1rem;
     }
 

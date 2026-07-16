@@ -9,10 +9,15 @@
 
 .board-display {
     width: min(800px, 100%); // funcao moderna do css, escolhe o menor valor entre 800px e 100% da largura da tela e nao estoura a tela
-    background: #111;
-    border: 1px solid #2d2d2d;
+    background:#09070b;
+    border: 1px solid #f472b6;
+    color: #f472b6;
+    font-family: "Fira Code", monospace;
     border-radius: 12px;
     overflow: hidden;
+    box-shadow:
+        0 0 30px rgba(244,114,182,.18),
+        inset 0 0 40px rgba(244,114,182,.05);
 }
 
 .board-display::before {
@@ -34,20 +39,22 @@
 #board-text {
     padding: 2rem;
 
-    color: #3cff73;
+    color: #f472b6;
 
     font-family: $fonte-codigo;
 
     font-size: 1.1rem;
 
     line-height: 1.8;
+
+    min-height: 320px;
     
     white-space: pre-line; // mantem os espaços e quebras de linha do texto
 }
 
 #board-text::after {
-    content: "_"; // adiciona um cursor piscando no final do texto
-    color: #3cff73;
+    content: "▌"; // adiciona um cursor piscando no final do texto
+    color: #f472b6;
     margin-left: 3px;
     animation: piscar .8s infinite; // animação de piscar o cursor
 }
