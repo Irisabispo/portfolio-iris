@@ -683,10 +683,18 @@ footer {
 footer .footer-direitos {
   color: #0e0e0e;
   font-size: 1rem;
+  text-align: center;
 }
 footer .icons {
   display: flex;
   gap: 2rem;
+}
+
+.footer__signature {
+  margin-top: 1 rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

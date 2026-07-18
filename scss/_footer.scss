@@ -12,6 +12,7 @@ footer {
     .footer-direitos {
         color: $cor-principal;
         font-size: 1rem;
+        text-align: center;
     }
     
     .icons {
@@ -19,4 +20,11 @@ footer {
         gap: 2rem;
         
     }
+}
+
+.footer__signature {
+    margin-top: 1 rem;
+    font-family: $fonte-codigo;
+    font-size: 3rem;
+    color: white;
 }
