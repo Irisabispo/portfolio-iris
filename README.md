@@ -9,11 +9,11 @@ Bem-vindo(a) ao meu portfólio! Este projeto foi desenvolvido para apresentar mi
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 
-## 🚀 Acesse o projeto
+##  Acesse o projeto
 
 [![Acessar Portfólio](https://img.shields.io/badge/Acessar%20Portfólio-000000?style=for-the-badge)](https://iris-bispo-portfolio.vercel.app/)
 
-## ✨ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -23,17 +23,16 @@ Bem-vindo(a) ao meu portfólio! Este projeto foi desenvolvido para apresentar mi
 - GitHub
 - Vercel
 
-## 🎨 Funcionalidades
+##  Funcionalidades
 
 - Layout responsivo
 - Menu mobile
 - Cards de habilidades com efeito de fumaça interativo
 - Título com gradiente animado
-- Mensagens dinâmicas na hero section
 - Animações suaves
 - Organização em componentes utilizando SCSS
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```text
 portfolio/
@@ -47,7 +46,7 @@ portfolio/
 └── README.md
 ```
 
-## 🛠️ Como executar
+##  Como executar
 
 Clone o repositório:
 
@@ -63,10 +62,10 @@ cd portfolio-iris
 
 Abra o arquivo `index.html` no navegador ou utilize uma extensão como **Live Server** no VS Code.
 
-## 🌱 Em desenvolvimento
+##  Em desenvolvimento
 
 Este portfólio está em constante evolução. Novas funcionalidades e projetos serão adicionados conforme avanço nos estudos.
 
-## 👩‍💻 Desenvolvido por
+##  Desenvolvido por
 
 **Iris Bispo**
