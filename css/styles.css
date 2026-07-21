@@ -645,6 +645,139 @@ body {
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
 }
 
+.contato__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 999px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  background: linear-gradient(135deg, rgba(255, 120, 220, 0.25), rgba(140, 90, 255, 0.18));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contato__tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(190, 120, 255, 0.3), 0 0 35px rgba(255, 120, 220, 0.18);
+}
+
+.contato__tag::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle, rgba(255, 150, 240, 0.45), transparent 70%);
+  opacity: 0.35;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 210, 229, 0.45);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(61, 255, 135, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(61, 255, 135, 0);
+  }
+}
+.contato__cargo {
+  margin-bottom: 1.5rem;
+  color: #d4b8a0;
+  font-size: 0.95rem;
+}
+
+.contato__title {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.contato__descricao {
+  max-width: 55ch;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #d4b8a0;
+}
+
+.contato__status {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.contato__status li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e486ee;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot {
+    animation: none;
+  }
+}
+.contat__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.35s ease;
+}
+
+.contato__link strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+
+.contato__link small {
+  color: #d4b8a0;
+  font-size: 0.88rem;
+}
+
+.contato__link span {
+  font-size: 1.3rem;
+  transition: 0.35s;
+}
+
 .board {
   display: flex;
   justify-content: center;
