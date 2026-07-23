@@ -195,7 +195,18 @@
     background: rgba(255, 255, 255, .04);
     border: 1px solid rgba(255, 255, 255, .08);
     transition: .35s ease;
+
+    cursor: pointer;
 }
+
+.contato__link:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+
+    border-color: rgba(255, 120, 220, .35);
+}
+
 
 .contato__link strong {
     display: block;
@@ -211,4 +222,66 @@
 .contato__link span {
     font-size: 1.3rem;
     transition: .35s;
+}
+.contato__link:hover span {
+    transform: translateX(6px);
+}
+
+.contato__link:focus-visible {
+    outline: 2px solid rgba(255, 120, 220, .7);
+    outline-offset: 4px;
+}
+
+//icones
+.contato__icone {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .06);
+    transition: .35s ease;
+    flex-shrink: 0;
+}
+
+.contato__icone i {
+    font-size: 1.4rem;
+    
+}
+
+.contato__link--github:hover {
+    border-color: #7d8590;
+}
+.contato__link--github:hover .contato__icone {
+    background: #24292f;
+    color: #ffffff;
+}
+
+.contato__link--linkedin:hover {
+    border-color: #0a66c2;
+}
+.contato__link--linkedin:hover .contato__icone {
+    background: #0a66c2;
+    color: #ffffff;
+}
+
+.contato__link--email:hover {
+    border-color: #ff79c6;
+}
+.contato__link--email:hover .contato__icone {
+    background: #ff79c6;
+    color: #ffffff;
+}
+
+.contato__link--whatsapp:hover {
+    border-color: #25d366;
+}
+.contato__link--whatsapp:hover .contato__icone {
+    background: #25d366;
+    color: #ffffff;
+}
+//rotação dos icones be sútil
+.contato__link:hover .contato__icone {
+    transform: rotate(-8deg) scale(1.08);
 }
