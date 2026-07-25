@@ -909,11 +909,11 @@ footer {
   background-color: #f472b6;
   margin-top: 10rem;
   padding: 4rem 8%;
-}
-footer .footer-direitos {
-  color: #0e0e0e;
-  font-size: 1rem;
-  text-align: center;
+  /*.footer-direitos {
+      color: $cor-principal;
+      font-size: 1rem;
+      text-align: center;
+  }*/
 }
 footer .icons {
   display: flex;
@@ -922,8 +922,8 @@ footer .icons {
 
 .footer__signature {
   margin-top: 1 rem;
-  font-family: "Source Code Pro", monospace;
-  font-size: 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10rem;
   color: white;
 }
 
