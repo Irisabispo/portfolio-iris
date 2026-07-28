@@ -1,5 +1,6 @@
 @use 'variables' as *;
 
+
 .hero {
     min-height: 100vh;
     background-color: rgb(3, 3, 3);
@@ -11,6 +12,12 @@
     overflow: visible;
     
     padding: 130px 4rem 2rem 4rem;
+
+    background: linear-gradient(
+        135deg,
+        #f472b6,
+        #a8a8b0,
+        #9bc5ef);
 
     h1 {
         font-size: 4.5rem;
@@ -52,6 +59,35 @@
     text-align: left;
     max-width: 600px;
 }
+/*
+.hero-texto h1 {
+    display: inline-block;
+    padding: 18px 32px;
+
+    background: rgba(255, 255, 255, 0.067);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.35),
+        0 0 25px rgba(232,162,184,.20);
+
+    transition: .35s;
+
+}*/
+
+.hero-texto h1:hover{
+box-shadow:
+        0 10px 40px rgba(0,0,0,.45),
+        0 0 40px rgba(232,162,184,.35);
+
+    transform: translateY(-3px);
+}
 
 @keyframes cair {
     from {
@@ -90,11 +126,9 @@
         &::before {
             content: '';
             position: absolute;
-            top: -80px;
-            left: 50%;
+            
             transform: translateX(-50%);
-            width: 24px;
-            height: 70px;
+            
             border: 6px solid $cor-destaque;
             border-bottom: none;
             border-radius: 20px 20px 0 0;
@@ -107,8 +141,7 @@
             top: -360px;
             left: 50%;
             transform: translateX(-50%);
-            width: 25px;
-            height: 360px;
+            
             background: $cor-destaque;
             border-radius: 2px;           
 }
